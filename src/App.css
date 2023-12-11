@@ -1,0 +1,228 @@
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.semi-round{
+  /* height: 40px; */
+  width: auto;
+  padding: 8px 15px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.round{
+  height: 40px;
+  width: 40px;
+  border-radius: 60%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.icon{
+  font-size: 20px;
+}
+
+.slick-dots {
+  position: static !important;
+  padding-bottom: 10px !important;
+}
+.slick-dots li button:before{
+  color: white !important;
+  font-size: 8px !important;
+}
+
+.main-heading{
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  max-height: 32px;
+  text-wrap: nowrap;
+  color: #202226;
+  font-family: 'korolev-condensed';
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.sub-heading{
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-bottom: 0px;
+  color: #7a7c82;
+  font-weight: 500;
+  line-height: 150%;
+  text-wrap: balance;
+}
+
+/* slider  */
+
+.slider-item {
+  /* margin: 20px; */
+  padding: 15px;
+}
+
+.slider-content {
+  height: 100%;
+  /* border: solid 1px rgb(186, 186, 186); */
+  width: 100%;
+  border-radius: 10px;
+}
+.slick-center .slider-border {
+  /* border: 2px solid red; */
+  /* width: 100%; */
+  height: 100%;
+  border-radius: 9px;
+}
+.slider-border img{
+  border-radius: 7px;
+}
+
+.carousel-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carousel-prev,
+.carousel-next {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #0074e4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: #0056b3;
+}
+.carousel-container {
+  /* border: 2px solid red; */
+  position: relative;
+}
+
+.custom-prev-arrow {
+  background-color: white;
+  border: 1px solid gray;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 1;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 38px;
+  width: 38px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.custom-next-arrows {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid gray;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 38px;
+  width: 38px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+/* ------------------------------------------------- */
+/* navratri  */
+
+.card-item{
+  display: flex;
+  padding: 20px;
+  border-radius: 5px;
+  height: 430px;
+  width: 100% ;
+}
+
+.custom-arrow svg{
+  font-size: 30px;
+  color: #c20000;
+}
+
+.element_box{
+  overflow: visible;
+  white-space: normal;
+  border-radius: 12px;
+  border: 1px solid #e6e5e5;
+  background: white;
+  /* height: 400px; */
+  height: 100%;
+}
+
+.homeIcon{
+  padding: 7px;
+  background: white;
+  border: 1px solid #f0f1f2;
+  border-radius: 100%;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+}
+
+/* term and condition  */
+.css-uvvswg-MuiButtonBase-root-MuiAccordionSummary-root{
+background-color: white !important;
+cursor: default !important;
+padding: 0 !important;
+}
+.css-1fjvggn-MuiPaper-root-MuiAccordion-root{
+border: none !important;
+}
+.MuiTypography-root{
+  cursor: pointer !important;
+}
+.css-ta84vm-MuiAccordionDetails-root{
+  border-top: none !important;
+}
+.MuiAccordionSummary-content p{
+font-size: 23px;
+font-weight: 700;
+color: #0D0f13;
+}
+
+.CartCompButton{
+  background-color: #29BCFF !important;
+  color: black !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  margin-top: 30px !important;
+  padding: 5px 20px !important;
+}
+
+.CartCompButton:hover{
+  color: white !important;
+}
+.cartForm{
+  width: 100% !important;
+}
