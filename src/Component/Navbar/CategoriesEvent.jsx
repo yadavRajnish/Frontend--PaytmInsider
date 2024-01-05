@@ -43,7 +43,7 @@ const CategoriesEvent = () => {
               <Link to={`/events/${item._id}`}>
                 <div style={{ width: "100%", borderRadius: "5px" }}>
                   <img
-                    src={`http://localhost:8282/uploads/${item.avatar}`}
+                    src={`https://paytm-insider-backend.onrender.com/uploads/${item.avatar}`}
                     alt="events"
                     className="max-w-full h-auto rounded-[5px]"
                   />
