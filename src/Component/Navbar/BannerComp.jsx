@@ -13,7 +13,8 @@ const BannerComp = ({ propsID, myicon }) => {
 
   useEffect(()=>{
     axios
-      .get("http://localhost:8282/get-event-data")
+      // .get("http://localhost:8282/get-event-data")
+      .get("https://paytm-insider-backend.onrender.com/get-event-data")
       .then((res) => {
         const getRes = res.data.data;
         const newData = getRes.filter((item) => item.categoryId === propsID);
@@ -28,7 +29,7 @@ const BannerComp = ({ propsID, myicon }) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8282/get-category/${propsID}`)
+      .get(`https://paytm-insider-backend.onrender.com/get-category/${propsID}`)
       .then((res) => {
         const getCategoryData = res.data.data;
         setCategoryData(getCategoryData);

@@ -71,7 +71,7 @@ export default function Cart() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8282/get-cart-item/${cartid}`)
+      .get(`https://paytm-insider-backend.onrender.com/get-cart-item/${cartid}`)
       .then((res) => {
         const resData = res.data.data;
         setData(resData);
@@ -109,7 +109,7 @@ export default function Cart() {
       setData(updatedCart);
 
       axios
-        .put(`http://localhost:8282/update-quantity/${eventId}?type=inc`, {
+        .put(`https://paytm-insider-backend.onrender.com/update-quantity/${eventId}?type=inc`, {
           quantity: quantity,
         })
         .then((response) => {
@@ -132,7 +132,7 @@ export default function Cart() {
       const quantity = updatedItem.quantity;
       setData(updatedCart);
       axios
-        .put(`http://localhost:8282/update-quantity/${productId}?type=desc`, {
+        .put(`https://paytm-insider-backend.onrender.com/update-quantity/${productId}?type=desc`, {
           quantity: quantity,
         })
         .then((response) => {})
@@ -158,7 +158,7 @@ export default function Cart() {
     const removedItem = updatedCart[index];
     setData(updatedCart);
     axios
-      .delete(`http://localhost:8282/delete-cart-item/${removedItem._id}`)
+      .delete(`https://paytm-insider-backend.onrender.com/delete-cart-item/${removedItem._id}`)
       .then((response) => {})
       .catch((error) => {
         console.error("Error deleting cart item:", error);

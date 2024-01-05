@@ -29,7 +29,7 @@ const Card = ({ element }) => {
         <div className="card-item ">
           <div className="element_box hover:shadow-[2px_6px_12px_rgba(0,0,0,0.1)] hover:transition-all ">
             <div className="w-[100%] overflow-hidden rounded-tl-[6px] rounded-tr-[6px]">
-              <img src={`http://localhost:8282/uploads/${image[0]}`} alt="" />
+              <img src={`https://paytm-insider-backend.onrender.com/uploads/${image[0]}`} alt="" />
             </div>
             <div className="text-left p-3 flex flex-col justify-between gap-3">
               <div className="font-bold">{tittle}</div>

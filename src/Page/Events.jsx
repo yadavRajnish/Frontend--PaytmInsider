@@ -23,7 +23,7 @@ const Events = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8282/get-event-tag")
+      .get("https://paytm-insider-backend.onrender.com/get-event-tag")
       .then((res) => {
         setEventNames(res.data.data);
       })

@@ -41,7 +41,7 @@ const SearchComponent = () => {
 
   const searchEvents = async (query) => {
     try {
-      const response = await axios.get("http://localhost:8282/get-events", {
+      const response = await axios.get("https://paytm-insider-backend.onrender.com/get-events", {
         params: {
           query: query,
         },

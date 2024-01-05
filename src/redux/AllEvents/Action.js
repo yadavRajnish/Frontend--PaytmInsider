@@ -4,7 +4,7 @@ export const getAllEvents = () => {
   return (dispatch) => {
     dispatch({ type: "Get-Events-Pending" });
     return axios
-      .get("http://localhost:8282/get-events")
+      .get("https://paytm-insider-backend.onrender.com/get-events")
       .then((response) => {
         dispatch({ type: "Get-Events-Success", payload: response.data });
         return Promise.resolve();
@@ -20,7 +20,7 @@ export const getEventsById = (categoryEventID) => {
   return (dispatch) => {
     dispatch({ type: "Get-Events-Success" });
     return axios
-      .get(`http://localhost:8282/get-event-by-id/${categoryEventID}`)
+      .get(`https://paytm-insider-backend.onrender.com/get-event-by-id/${categoryEventID}`)
       .then((res) => {
         // console.log(res);
         dispatch({ type: "Get-Events-Success", payload: res.data });
@@ -54,7 +54,7 @@ export const getEventByQuery = (eventTag) => {
   return (dispatch) => {
     dispatch({ type: "Get-Events-Success" });
     return axios
-      .get(`http://localhost:8282/get-event-categoryid/?eventTag=${eventTag}`)
+      .get(`https://paytm-insider-backend.onrender.com/get-event-categoryid/?eventTag=${eventTag}`)
       .then((res) => {
         dispatch({ type: "Get-Events-Success", payload: res.data });
         return Promise.resolve();

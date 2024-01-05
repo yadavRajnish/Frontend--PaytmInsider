@@ -36,7 +36,7 @@ function SignUpPage() {
 
   const handleSubmit = async (values, { resetForm }) => {
     try {
-      const response = await fetch("http://localhost:8282/sign-up", {
+      const response = await fetch("https://paytm-insider-backend.onrender.com/sign-up", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

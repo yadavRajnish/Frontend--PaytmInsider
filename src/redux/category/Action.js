@@ -4,7 +4,7 @@ export const getSubCategory= (categoryEventID)=>{
     return (dispatch)=>{
         dispatch({type:"Get-Category-Pending"});
         return axios
-        .get(`http://localhost:8282/get-category/${categoryEventID}`)
+        .get(`https://paytm-insider-backend.onrender.com/get-category/${categoryEventID}`)
         .then((res)=>{
             dispatch({type:"Get-Category-Success",payload:res.data})
             // console.log(res.data)
@@ -21,7 +21,7 @@ export const getAllCategories= (categoryEventID)=>{
     return (dispatch)=>{
         dispatch({type:"Get-Category-Pending"});
         return axios
-        .get(`http://localhost:8282/get-categories`)
+        .get(`https://paytm-insider-backend.onrender.com/get-categories`)
         .then((res)=>{
             dispatch({type:"Get-Category-Success",payload:res.data})
             // console.log(res.data)

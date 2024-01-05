@@ -8,7 +8,7 @@ const CategoriesEvent = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8282/get-categories")
+      .get("https://paytm-insider-backend.onrender.com/get-categories")
       .then((response) => {
         const responseData = response.data.data;
         setData(responseData);

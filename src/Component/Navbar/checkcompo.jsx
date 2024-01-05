@@ -78,7 +78,7 @@ const Detailspageee = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8282/get-event/${id}`)
+      .get(`https://paytm-insider-backend.onrender.com/get-event/${id}`)
       .then((res) => {
         const resData = res.data.data;
         setData(resData);
@@ -90,7 +90,7 @@ const Detailspageee = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8282/get-events")
+      .get("https://paytm-insider-backend.onrender.com/get-events")
       .then((res) => {
         const resData = res.data.data;
         const newData = resData.filter(
@@ -116,7 +116,7 @@ const Detailspageee = () => {
     console.log(add);
 
     axios
-      .post("http://localhost:8282/add-to-cart", add)
+      .post("https://paytm-insider-backend.onrender.com/add-to-cart", add)
       .then((response) => {
         const cartData = response.data.data;
         console.log(cartData);
@@ -226,7 +226,7 @@ const Detailspageee = () => {
           <div className="col-span-2 row-span-2 overflow-hidden">
             <img
               className="rounded-[8px]"
-              src={`http://localhost:8282/uploads/${data?.image}`}
+              src={`https://paytm-insider-backend.onrender.com/uploads/${data?.image}`}
               alt="img"
             />
           </div>
